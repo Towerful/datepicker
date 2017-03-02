@@ -1,5 +1,5 @@
 <template>
-  <input class="input" :class="inputClass" type="text" :placeholder="placeholder" :readonly="readonly" v-model="value"/>
+  <input class="input" :class="inputClass" type="text" :placeholder="placeholder" :readonly="readonly" v-model="date"/>
 </template>
 
 <script>
@@ -28,6 +28,17 @@ export default {
 
   data () {
     return {
+    }
+  },
+  
+  computed: {
+    date: {
+      get() {
+        return this.value;
+      },
+      set(newValue) {
+        this.$emit('input', newValue);
+      }
     }
   }
 }
