@@ -40,12 +40,12 @@ export default {
     placeholder: {
       type: String,
       default: 'Pick date'
-    }
+    },
+    value: String
   },
 
   data () {
     return {
-      value: '',
       datepicker: null
     }
   },

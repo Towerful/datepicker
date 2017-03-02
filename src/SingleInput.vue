@@ -22,12 +22,12 @@ export default {
     inputClass: {
       type: Object,
       default: () => ({})
-    }
+    },
+    value: String
   },
 
   data () {
     return {
-      value: ''
     }
   }
 }

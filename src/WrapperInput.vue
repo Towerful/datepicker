@@ -25,7 +25,8 @@ export default {
     inputClass: {
       type: Object,
       default: () => ({})
-    }
+    },
+    value: String
   },
 
   mounted () {
@@ -34,7 +35,6 @@ export default {
 
   data () {
     return {
-      value: ''
     }
   }
 }
