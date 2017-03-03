@@ -54,9 +54,6 @@ export default {
     if (!this.datepicker) {
       this.datepicker = new Datepicker(this.$el, this.config, this.l10n)
       this.popupItem = this.datepicker.calendarContainer
-      this.datepicker.set('onChange', (d, s) => {
-        this.date = s;
-      })
     }
   },
 
